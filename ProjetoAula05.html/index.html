@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Aula 06</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Video</h2>
+        <div>
+            <h3> Video HTML</h3>
+            <video autoplay  controls width="500" 
+                src="https://videos.rockstargames.com/v4/1s626s55/flv/en-us-1080p.mp4">
+            </video>
+        </div>
+        <div>
+            <h3> Video: YouTube</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZTKFrzn1lA0?si=zOgLb8-ZumWNUlHF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+        </section>
+        <section>
+            <h2>Tabela</h2>
+            <table border="1">
+                <thead>
+                    <tbody></tbody>
+                    <tr>
+                        <th>NOME</th>
+                        <th>IDADE</th>
+                        <th colspan="2">PROFISSÃO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fernando</td>
+                        <td rowspan="2">18</td>
+                        <td>Contabilidade</td>
+                        <td>Societario</td>
+
+                    <tr>
+                        <td>Felipe</td>
+                        <!-- <td>Contabilidade</td> -->
+                        <td>Gmer</td>
+                    </tr>
+                </tbody>    
+            </table>
+        </section>
+        <section>
+            <h2>Formulários</h2>
+            <form method="post" action="">
+                <fieldset>
+                    <legend> Dados Pessoais</legend>
+                    <label for="nome">Nome:</label>
+                    <input required placeholder="Digite seu nome..." nome="nome-completo" id="nome" type="text">
+                    <br>
+                    <label for="">E-mail</label>
+                    <input nome="email-pessoal" type="email" value="@unifebe.edu.br">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Seleção de Lista</legend>
+                    <label for="estado">Selecone o seu estado:</label>
+                    <select name="estado-mencionado" id="">
+                        <option value="SC">Santa Catarina</option>
+                        <option value="PR">Parána</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual o melhor período para estudo?</legend>
+
+                    <input type="radio" id="manha" nome="periodo-estudo">
+                    <label for="manha">Manhã</label>
+
+                    <input type="radio" id="tarde" nome="periodo-estudo">
+                    <label for="tarde">Tarde</label>
+
+                    <input type="radio" id="noite" nome="periodo-estudo">
+                    <label for="noite">Noite</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Lista de compra</legend>
+                    <input type="checkbox" id="cafe" name="cafe">
+                    <label for="cafe">Café</label>
+                    <br>
+                    <input type="checkbox" id="leite" name="leite">
+                    <label for="leite">Leite</label>
+                    <br>
+                    <input type="checkbox" id="aucar" name="acucar">
+                    <label for="acucar">Açucar</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Comentários</legend>
+                    <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+                </fieldset>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Reset</button>
+                
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
