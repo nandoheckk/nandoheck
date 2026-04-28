@@ -1,0 +1,38 @@
+div {
+display: inline;
+}
+
+a {
+    display: block;
+}
+
+h1 {
+    display: none;
+    visibility: hidden;
+}
+
+.container{
+    background-color: rgb(140, 172, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
