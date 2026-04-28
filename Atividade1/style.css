@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        "cabecalho cabecalho cabecalho"
+        "menu conteudo publicidade"
+        "rodape rodape rodape";
+}
+
+/* Áreas */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: cabecalho;
+    background: #333;
+    color: white;
+    font-size: 30px;
+    height: 10vh;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: menu;
+    background: #f4f4f4;
+    height: 70vh;
+    font-size: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: conteudo;
+    background: #ffffff;
+    height: 70vh;
+    font-size: 30px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: publicidade;
+    background: #eaeaea;
+    height: 70vh;
+    font-size: 30px;
+}
+
+footer {
+    grid-area: rodape;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: white;
+    height: 20vh;
+    font-size: 30px;
+}
